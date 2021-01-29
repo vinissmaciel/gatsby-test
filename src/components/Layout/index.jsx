@@ -1,15 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Menu from "../Menu"
 
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
  
   return (
     <>
-        Header
-        <main>{children}</main>
-        Footer
+      <Menu />
+      <main>{children}</main>
     </>
   )
 }

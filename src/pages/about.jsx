@@ -1,16 +1,48 @@
 import React from 'react'
-import Menu from '../components/Menu'
 import Layout from '../components/Layout'
+
+import CardV2 from '../components/CardV2'
 
 const About = () => {
     const text = "meu texto"
 
     return(
         <Layout>
-            <Menu />
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 py-4">
+                        <h1>About</h1>
+                        <p>{text}</p>
+                    </div>
+                </div>
+            </div>
 
-            <h1>About</h1>
-            <h2>{text}</h2>
+            <div className="container">
+                <div className="row">
+                    <div className="col-4">
+                        <CardV2 
+                            titleCard="Card Title 01"
+                            textCard="G?"
+                            colorButton="gatsby"
+                        />
+                    </div>
+                    <div className="col-4">
+                        <CardV2 
+                            titleCard="Card Title 02"
+                            textCard="3?"
+                            colorButton="warning"
+                        />
+                    </div>
+                    <div className="col-4">
+                        <CardV2 
+                            titleCard="Card Title 03"
+                            textCard="X?"
+                            colorButton="danger"
+                        />
+                    </div>
+                </div>
+            </div>
+          
         </Layout>
     )
 }
